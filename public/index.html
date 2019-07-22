@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Search Banks</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+<form>
+<h1>Search Banks</h1>
+<div id="generalSearchComp">
+  <label for="keywords">Search: </label>
+  <input id="keywords">
+</div>
+<div id="branchComp" style="display: none;">
+  <div class="autocomplete"  style="width:300px;">
+    <input id="bankName" type="text" name="bankName" placeholder="bankName">
+    <div id="bankNameValidation" style="color: red; display: none;">Not Valid!</div>
+    <input id="branchName" type="text" name="branchName" placeholder="branchName" onautocomplete="false">
+  </div>
+</div>
+<div>
+  <label for="filters"> Filter By: </label>
+  <select id="filters">
+    <option></option>
+    <option>Bank Name & Branch Number</option>
+  </select>
+</div>
+</form>
+<div>
+  <input id="submit" type="button" value="submit">
+  <input id="refrash" type="button" value="refrash" onclick="window.location.reload()">
+</div>
+
+
+<div id="results">
+
+</div>
+
+<script src="javascripts/bank.js"></script>
+<!--
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+!-->
+</body>
+
+</html>
