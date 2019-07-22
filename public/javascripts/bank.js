@@ -233,7 +233,7 @@ let checkFormValidation = (value) => {
         bankNameValidation.style.display = "block";
     }
 };
-//TODO:body not good!!!!
+
 branchNameInput.addEventListener("click", e => {
     branchNameInput.value="";
     var res=[];
